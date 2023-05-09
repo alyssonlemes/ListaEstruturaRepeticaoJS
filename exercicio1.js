@@ -27,6 +27,7 @@ function exe1(){
     }
         alert(`Crescente: ${a} ${b} ${c} ${d}`)
         alert(`Decrescente: ${d} ${c} ${b} ${a}`)
+        
+        cont++
 }
 }
-
