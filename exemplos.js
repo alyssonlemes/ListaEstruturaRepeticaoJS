@@ -42,3 +42,20 @@ function tabuada(){
     }
 
 }
+
+function ex2(){
+    let preco = 5.0
+    let qtde = 120
+    const despesa = 200
+    let lucro = 0
+    let saida = "<table><tr> <th>Preço</th> <th>Quantidade</th> <th>Despesa</th> <th>Lucro</th> </tr>"
+
+    while(preco >= 1.0){
+        lucro = (preco * qtde) - despesa
+        saida = saida + `<tr></tr> ${preco} ${qtde} ${despesa} ${lucro}`
+        preco = preco - 0.50
+        qtde = qtde + 26
+        alert(saida)
+    }
+
+}
