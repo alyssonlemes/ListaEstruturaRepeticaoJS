@@ -52,7 +52,7 @@ function ex2(){
 
     while(preco >= 1.0){
         lucro = (preco * qtde) - despesa
-        saida = saida + `<tr></tr> ${preco} ${qtde} ${despesa} ${lucro}`
+        saida = saida + `<tr> <td>${preco}</td> <td>${qtde}</td> <td>${despesa}</td> <td>${lucro}</td> </tr>`
         preco = preco - 0.50
         qtde = qtde + 26
         alert(saida)
