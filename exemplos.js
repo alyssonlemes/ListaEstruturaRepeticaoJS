@@ -93,3 +93,36 @@ function exe6(){
 
 
 }
+
+function exe7(){
+
+    let idade, altura, peso;
+    let idade50 = 0; let somaAltura = 0;
+    let contaAltura = 0; let peso40 = 0;
+
+    for(let conta = 1; conta <= 5; conta++){
+        
+        idade = Number(prompt("Informe a idade"))
+        altura = Number(prompt("Informe a altura"))
+        peso = Number(prompt("Informe o peso"))
+        
+        if(idade > 50){
+            idade50 ++
+
+        }
+        else if(idade >=10 && idade <=20){
+            somaAltura += altura
+            contaAltura++
+        }
+        if(peso < 40){
+            peso40++
+
+        }
+    }
+
+    alert(`Idade > 50 ${idade50}`)
+    alert(`Média da altura com idade entre 10 e 20 ${somaAltura / contaAltura}`)
+    alert(`Porcentagem de pessoas com peso inferior a 40 ${peso40 / 5*100}`)
+
+
+}
