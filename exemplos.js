@@ -126,3 +126,31 @@ function exe7(){
 
 
 }
+
+function exe10(){
+
+    
+    let nro = Number(prompt('Informe o numero'))
+
+    let resto0 = 0
+
+    let contaprimo = 0
+    let contapar = 0
+
+    for(let i = 0; i <= nro && (resto0 <= 2); i++){
+    
+        if(nro % i == 0){
+    resto0++
+}  
+        if(resto0 == 2 ) {
+            alert('É primo')
+
+    }
+    else{
+        alert('Não é primo')
+    }
+    
+
+
+}
+}
