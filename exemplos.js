@@ -198,7 +198,7 @@ function exe20(){
 function exe21(){
     
     let cand1 = 0, cand2 = 0, cand3 = 0, cand4 = 0, nulos = 0, brancos = 0
-    let total1, opcao/
+    let total1, opcao
 
     do{
         opcao = Number(prompt("Escolha uma op;'ao? \n 1. Candi 1 \n 2. Cand 2 \n 3. Cand 3 \n 4. Cand4 \n 5. Nulo \n 6. Branco \n 0. Sair do programa"))
