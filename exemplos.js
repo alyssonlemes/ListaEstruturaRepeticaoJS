@@ -194,3 +194,34 @@ function exe20(){
 
         }while(opcao != 3 )
 }
+
+function exe21(){
+    
+    let cand1 = 0, cand2 = 0, cand3 = 0, cand4 = 0, nulos = 0, brancos = 0
+    let total1, opcao/
+
+    do{
+        opcao = Number(prompt("Escolha uma op;'ao? \n 1. Candi 1 \n 2. Cand 2 \n 3. Cand 3 \n 4. Cand4 \n 5. Nulo \n 6. Branco \n 0. Sair do programa"))
+     
+        switch(opcao){
+            case 1: cand1++;
+            case 2: cand2++;
+            case 3: cand3++;
+            case 4: cand4++;
+            case 5: nulos++;
+            case 6: brancos++;
+            default: alert('Opcao invalida')
+
+
+        }
+
+    }while(opcao != 0);
+
+    total = cand1 + cand2 + cand3 + cand4 + nulos + brancos
+    if(total > 0){
+    alert(`% de votos nulos ${(nulos/total)*100}`)
+    alert(`% de votos brancos ${brancos/total*100}`)
+
+}
+    else alert('Nenhum voto computado')
+}
